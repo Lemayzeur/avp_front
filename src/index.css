@@ -53,7 +53,7 @@ div.icons-list .icon:hover{
 }
 @media (min-width: 768px) {
   .app_screenshots {
-    width: 75%;
+    width: 80%;
   }
 
   #main .header{
@@ -63,8 +63,14 @@ div.icons-list .icon:hover{
     height: calc(100vh - 120px);
     width: 100vw;
   }
+  #main .header .c1{
+    height: 30vh;
+  }
+  #main .header .c2{
+    height: 70%;
+  }
   #dplus {
-    height: 70px;
+    height: 65px;
   }
 }
 
@@ -77,8 +83,6 @@ div.icons-list .icon:hover{
     background-image: url("./assets/bg_mobile.png");
     background-repeat: no-repeat;
     background-size: contain;
-    height: calc(100vh - 200px);
-    width: 100vw;
   }
   #dplus {
     height: 60px;

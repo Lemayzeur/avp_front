@@ -31,20 +31,23 @@ function App() {
   return (
       <div className="" id='main'>
         <section className="header">
-          <div className='container'>
+          <div className='container c1'>
             <div className="row mb-5 align-items-between justify-content-center">
               <div className="col-12 text-center text-md-start">
                 <img src={logo_web} className="d-none d-md-inline" height='110' alt="Avantaj Pam Logo"/>
                 <img src={logo_mobile} className="d-inline d-md-none" height='110' alt="Avantaj Pam Logo"/>
               </div>
             </div>
+          </div>
+          <div className='container c2'>
             <div className="row align-items-between justify-content-center ">
               <div className="col-12 col-md-6 text-center text-md-start">
                 <img src={man_pub_img} style={mainPubStyles} alt="man_pub_img"/>
               </div>
               <div className="col-12 col-md-6 text-center">
-                <div className='mb-3'><img className='app_screenshots' src={app_screenshots} alt="app_screenshots"/></div>
+                <div className='mb-md-3 mb-5'><img className='app_screenshots mt-md-0 mt-5' src={app_screenshots} alt="app_screenshots"/></div>
                 <Button 
+                  size='lg'
                   style={btnStyles}
                   className='shadow'
                 ><span className='android-icon'><i className='fab fa-android fa-fw'></i></span> Telechaje aplikasyon an</Button>
@@ -90,7 +93,7 @@ function App() {
               </div>
             </div>
             <div className="col-md-4 col-12  px-4 mb-md-0 mb-4 text-center text-md-start">
-              <hr className='d-block d-sm-none' /><br/>
+              <hr className='d-block d-md-none' />
               <div>
                 <img src={haiti} className="me-4 d-inline d-md-none" height='45' alt="Haiti Flag"/>
                 <img src={ad_img} id='dplus' alt="ad_img" />
