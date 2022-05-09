@@ -8,18 +8,11 @@ code {
     monospace;
 }
 
-#main{
-  height: calc(100vh - 120px);
-  width: 100vw;
-}
-
 #footer{
   background-color: #0E76BC;
   width: 100%;
   min-height: 120px;
   padding: 15px;
-}
-#footer{
   font-size: 15px;
   font-weight: 300;
 }
@@ -67,6 +60,8 @@ div.icons-list .icon:hover{
     background-image: url("./assets/bg_web.png");
     background-repeat: no-repeat;
     background-size: contain;
+    height: calc(100vh - 120px);
+    width: 100vw;
   }
   #dplus {
     height: 70px;
@@ -82,6 +77,8 @@ div.icons-list .icon:hover{
     background-image: url("./assets/bg_mobile.png");
     background-repeat: no-repeat;
     background-size: contain;
+    height: calc(100vh - 200px);
+    width: 100vw;
   }
   #dplus {
     height: 60px;
