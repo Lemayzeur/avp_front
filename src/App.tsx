@@ -16,16 +16,17 @@ import haiti from './assets/icons/haiti.png';
 
 function App() {
   const mainPubStyles = {
-    width: '80%',
-    border: 'solid 10px #fff',
+    width: '85%',
+    border: 'solid 13px #fff',
     borderRadius: 10,
-    webkitBoxShadow: "3px 1px 15px 0px rgba(0,0,0,0.77)", 
-    boxShadow: "3px 1px 15px 0px rgba(0,0,0,0.77)"
+    webkitBoxShadow: "3px 1px 15px 0px rgba(0,0,0,0.12)", 
+    boxShadow: "3px 1px 15px 0px rgba(0,0,0,0.12)"
   }
 
   const btnStyles = {
     border:'none',
     background: "linear-gradient(62.36deg, #5552FE 5.35%, #16EDFC 111.11%)",
+    borderRadius: '10px',
   }
 
   return (
