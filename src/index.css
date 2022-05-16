@@ -1,91 +1,351 @@
 body {
+  font-family: "Roboto";
   margin: 0;
-  font-family: 'Roboto';
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app-container {
+  position: relative;
 }
 
-#footer{
-  background-color: #0E76BC;
-  width: 100%;
-  min-height: 120px;
-  padding: 15px;
-  font-size: 15px;
+#core-body section .vid-wrapper video {
+  box-shadow: 3px 1px 15px 0px rgba(0, 0, 0, 0.12);
+  height: auto;
+}
+
+footer {
+  font-size: 0.94rem;
   font-weight: 300;
+  position: relative;
 }
 
-#footer h4 {
-  font-size: 20px;
-  font-weight: 700, Bold;
-}
-
-#footer {
+footer a {
   color: #fff;
+  text-decoration: none;
 }
 
-div.icons-list .icon{
+footer a:hover {
+  text-decoration: none;
+  color: #ffff00;
+}
+
+div.icons-list .icon {
   margin-right: 10px;
 }
 
-div.icons-list .icon img{
-  height: 34px;
+.fa-icon {
+  width: 15px;
+  margin-right: 5px;
 }
 
-div.icons-list .icon:hover{
+div.icons-list .icon:hover {
   text-decoration: none;
   opacity: 0.7;
   color: #fff;
 }
 
-.android-icon{
-  background-color: #004E83;
+.android-icon {
+  background-color: #004e83;
   padding: 3px;
   border-radius: 5px;
+  font-size: 25px;
+  vertical-align: middle;
 }
 
-#footer hr {
-  height: 2px;
-  background-color: #fff;
-  opacity: 1;
+div.icons-list .icon img {
+  height: 1.6rem;
 }
-@media (min-width: 768px) {
-  .app_screenshots {
-    width: 80%;
+
+#dplus {
+  height: 69px;
+}
+
+#download-btn {
+  border: none;
+  background: linear-gradient(62.36deg, #5552fe 5.35%, #16edfc 111.11%);
+  border-radius: 17px;
+}
+
+#core-body section .vid-wrapper {
+  position: relative;
+}
+
+#core-body section .vid-wrapper video {
+  visibility: hidden;
+}
+
+#targetWindow {
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 120px;
+  padding-top: 20px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  -webkit-transition: height 0.3s ease;
+  border-radius: 10px 10px 0 0;
+}
+
+#targetWindow img {
+  height: 30px;
+  width: 30px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 6px) {
+  #test {
+    background-color: blue;
   }
-
-  #main .header{
-    background-image: url("./assets/bg_web.png");
+  .app-container {
+    background-image: url("https://lemayzeur.github.io/avp_front/static/media/bg_mobile.51758e037f84f146bc6d.png");
     background-repeat: no-repeat;
     background-size: contain;
-    height: calc(100vh - 120px);
-    width: 100vw;
+    width: 100%;
   }
-  #main .header .c1{
-    height: 30vh;
+  #logo-container {
+    text-align: center;
+    margin-bottom: 45px;
+    padding: 0 10%;
   }
-  #main .header .c2{
-    height: 70%;
+  #core-body {
+    margin-bottom: 45px;
   }
-  #dplus {
-    height: 65px;
-  }
-}
 
-@media (max-width: 768px) {
+  #core-body section .vid-wrapper video {
+    /* border-radius: 20px; */
+    /* border: solid 13px #fff; */
+    max-width: 100%;
+  }
+
+  .playBtn i {
+    color: #fff;
+    font-size: 30px;
+  }
+
+  .playBtn,
+  .playBtn i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+  .playBtn {
+    background-color: #f06b05;
+    border: solid 5px #fff;
+    padding: 10px;
+    border-radius: 50%;
+    height: 65px;
+    width: 65px;
+  }
+
+  footer {
+    background-color: #0e76bc;
+    width: 100vw;
+    color: #fff;
+    padding: 25px;
+  }
+
+  footer h4 {
+    font-size: 1.2rem;
+    font-weight: 700, Bold;
+  }
+
   .app_screenshots {
     width: 80%;
   }
 
-  #main .header{
+  #main .header {
     background-image: url("./assets/bg_mobile.png");
     background-repeat: no-repeat;
     background-size: contain;
   }
   #dplus {
-    height: 60px;
+    height: 50px;
+  }
+
+  #core-body section .vid-wrapper {
+    max-width: 85%;
+    text-align: center;
+    background: url("https://images.gawker.com/1501410614703625794/c_scale,fl_progressive,q_80,w_800.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 7px;
+    border: solid 3px#fff;
+    cursor: pointer;
+    position: relative;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.52);
+  }
+
+  #playlist {
+    height: 130px;
+    overflow-x: scroll;
+    display: flex;
+  }
+
+  #playlist video {
+    height: 130px;
+    width: 110px;
+    margin-right: 15px;
   }
 }
 
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #test {
+    background-color: red;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #test {
+    background-color: green;
+  }
+  .app-container {
+    background-image: url("https://lemayzeur.github.io/avp_front/static/media/bg_web.2bd96a330249fad1302b.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  #logo-container {
+    padding-left: 135px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  #core-body {
+    height: calc(100vh - 95px);
+    /* background-color: #000; */
+  }
+
+  #core-body section {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: calc(100vh / 640px);
+    width: calc(100vw - 135px);
+    text-align: center;
+  }
+
+  #core-body section .vid-wrapper {
+    max-height: calc(100vh / 720px);
+    max-width: calc(100vw / 1280px);
+    padding-right: 10%;
+    text-align: center;
+    background: url("https://images.gawker.com/1501410614703625794/c_scale,fl_progressive,q_80,w_800.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    border: solid 10px #fff;
+    cursor: pointer;
+  }
+
+  .playBtn i {
+    color: #fff;
+    font-size: 50px;
+    margin-left: 5px;
+  }
+
+  .playBtn,
+  .playBtn i {
+    position: absolute;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .playBtn {
+    background-color: #f06b05;
+    border: solid 5px #fff;
+    padding: 10px;
+    border-radius: 50%;
+    height: 105px;
+    width: 105px;
+  }
+
+  #core-body section .screenshot-wrapper {
+    height: calc(100vh / 720px);
+    width: calc(100vw / 1080px);
+    padding-left: 10%;
+    text-align: center;
+  }
+
+  footer {
+    position: absolute;
+    top: calc(100vh - 95px);
+    left: 0;
+    background-color: #0e76bc;
+    height: 95px;
+    width: 100vw;
+    color: #fff;
+    padding: 7px;
+  }
+
+  footer h4 {
+    font-size: 1.1rem;
+    font-weight: 700, Bold;
+  }
+
+  footer .info,
+  footer .copyright {
+    font-size: 0.8rem;
+  }
+
+  .app_screenshots {
+    width: 120%;
+  }
+
+  /* .copyright {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+  } */
+
+  #dplus {
+    height: 60px;
+  }
+  #core-body section .vid-wrapper video {
+    /* border-radius: 20px; */
+    /* border: solid 13px #fff; */
+    max-width: 120%;
+  }
+  .add-border-end {
+    border-right: 1px solid #dee2e6 !important;
+  }
+
+  .vid-modal .modal-body .row {
+    height: 60vh;
+  }
+
+  #playlist {
+    height: 50vh;
+    overflow-y: scroll;
+    display: block;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #test {
+    background-color: black;
+  }
+  footer .info,
+  footer .copyright {
+    font-size: 0.9rem;
+  }
+}
